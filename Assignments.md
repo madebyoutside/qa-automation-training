@@ -1,4 +1,4 @@
-1
+## Array
 
 Write a function to find the longest common prefix string amongst an array of strings.If there is no common prefix, return an empty string "".
 
@@ -33,7 +33,7 @@ Password: it can't be empty, and it must be at least 6 characters long. Otherwis
  Validate when the user leaves a field.
 Clear the error when the user returns to a field.
 
-Objects
+## Objects
 
 Given an object or array obj, return a compact object.
 A compact object is the same as the original object, except with keys containing falsy values removed. This operation applies to the object and any nested objects. Arrays are considered objects where the indices are keys. A value is considered falsy when Boolean(value) returns false.
@@ -44,7 +44,7 @@ Input: obj = {"a": null, "b": [false, 1]}
 Output: {"b": [1]}
 Explanation: obj["a"] and obj["b"][0] had falsy values and were removed.
 
-Async
+## Async Javascript
 
 Assignment for the asynchronous javascript chapter:
 
