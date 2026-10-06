@@ -1,17 +1,49 @@
-// Write a function to find the longest common prefix string amongst an array of strings.If there is no common prefix, return an empty string "".
 
+// Activity
+// const results = [
+// "passed",
+// "failed",
+// "passed",
+// "passed",
+// "failed",
+// "skipped"
+// ];
 
-const word = ["fly", "flow", "flight", "four"];
+// and we should be able to produce the following output.
+// Total: 6
+// Passed: 3
+// Failed: 2
+// Skipped: 1
+// Pass rate: 50%
 
-function longestPrefix(word) {
-    for (let i=0; i<word[0].length; i++)
-    {
-      for (let j=1; j<word.length; j++)
-      {
-        if(word[j][i] !== word[0][i])
-          return word[0].slice(0,i);
-      }
-    }
-    return word[0];
+const results = [
+  "passed",
+  "failed",
+  "passed",
+  "passed",
+  "failed",
+  "skipped"
+];
+
+const total = results.length;
+let passed = 0;
+let failed = 0;
+let skipped = 0;
+
+for (let i = 0; i < total; i++) {
+  if (results[i] === "passed") {
+    passed = passed + 1;
+  } else if (results[i] === "failed") {
+    failed = failed + 1;
+  } else {
+    skipped = skipped + 1;
+  }
 }
-console.log(longestPrefix(word));
+
+const passrate = (passed / total) * 100;
+
+console.log("Total:", total);
+console.log("Passed:", passed);
+console.log("Failed:", failed);
+console.log("Skipped:", skipped);
+console.log("Pass Rate:", passrate + "%");
