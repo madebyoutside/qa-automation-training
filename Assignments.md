@@ -1,3 +1,22 @@
+## Loops
+
+// Activity
+const results = [
+"passed",
+"failed",
+"passed",
+"passed",
+"failed",
+"skipped"
+];
+
+// and we should be able to produce the following output.
+// Total: 6
+// Passed: 3
+// Failed: 2
+// Skipped: 1
+// Pass rate: 50%
+
 ## Array
 
 Write a function to find the longest common prefix string amongst an array of strings.If there is no common prefix, return an empty string "".
