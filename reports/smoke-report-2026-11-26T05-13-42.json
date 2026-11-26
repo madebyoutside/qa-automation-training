@@ -1,0 +1,48 @@
+{
+  "ranAt": "2026-11-26T05:13:42.650Z",
+  "totalMs": 348,
+  "passed": 5,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Posts API",
+      "url": "https://jsonplaceholder.typicode.com/posts",
+      "status": 200,
+      "expected": 200,
+      "timeMs": 66,
+      "result": "PASS"
+    },
+    {
+      "name": "Single user",
+      "url": "https://jsonplaceholder.typicode.com/users/1",
+      "status": 200,
+      "expected": 200,
+      "timeMs": 36,
+      "result": "PASS"
+    },
+    {
+      "name": "Products API",
+      "url": "https://dummyjson.com/products?limit=5",
+      "status": 200,
+      "expected": 200,
+      "timeMs": 325,
+      "result": "PASS"
+    },
+    {
+      "name": "Quotes API",
+      "url": "https://dummyjson.com/quotes/random",
+      "status": 200,
+      "expected": 200,
+      "timeMs": 319,
+      "result": "PASS"
+    },
+    {
+      "name": "Missing page",
+      "url": "https://jsonplaceholder.typicode.com/nope",
+      "status": 404,
+      "expected": 404,
+      "timeMs": 305,
+      "result": "PASS"
+    }
+  ]
+}
